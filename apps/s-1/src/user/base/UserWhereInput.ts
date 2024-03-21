@@ -13,9 +13,8 @@ import { InputType, Field } from "@nestjs/graphql";
 import { ApiProperty } from "@nestjs/swagger";
 import { StringFilter } from "../../util/StringFilter";
 import { Type } from "class-transformer";
-import { IsOptional, IsEnum } from "class-validator";
+import { IsOptional } from "class-validator";
 import { StringNullableFilter } from "../../util/StringNullableFilter";
-import { EnumUserFff } from "./EnumUserFff";
 
 @InputType()
 class UserWhereInput {
@@ -76,14 +75,36 @@ class UserWhereInput {
 
   @ApiProperty({
     required: false,
-    enum: EnumUserFff,
+    type: StringNullableFilter,
   })
-  @IsEnum(EnumUserFff)
+  @Type(() => StringNullableFilter)
   @IsOptional()
-  @Field(() => EnumUserFff, {
+  @Field(() => StringNullableFilter, {
     nullable: true,
   })
-  fff?: "Muly" | "Mor" | "Amit";
+  muly?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  paz?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
+  amit?: StringNullableFilter;
 }
 
 export { UserWhereInput as UserWhereInput };

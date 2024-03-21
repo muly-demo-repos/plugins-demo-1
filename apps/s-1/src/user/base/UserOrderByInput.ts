@@ -127,7 +127,29 @@ class UserOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  fff?: SortOrder;
+  muly?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @IsOptional()
+  @IsEnum(SortOrder)
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  paz?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["asc", "desc"],
+  })
+  @IsOptional()
+  @IsEnum(SortOrder)
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
+  amit?: SortOrder;
 }
 
 export { UserOrderByInput as UserOrderByInput };

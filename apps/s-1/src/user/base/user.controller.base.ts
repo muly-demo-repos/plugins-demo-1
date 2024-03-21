@@ -57,7 +57,9 @@ export class UserControllerBase {
         username: true,
         email: true,
         roles: true,
-        fff: true,
+        muly: true,
+        paz: true,
+        amit: true,
       },
     });
   }
@@ -87,7 +89,9 @@ export class UserControllerBase {
         username: true,
         email: true,
         roles: true,
-        fff: true,
+        muly: true,
+        paz: true,
+        amit: true,
       },
     });
   }
@@ -118,7 +122,9 @@ export class UserControllerBase {
         username: true,
         email: true,
         roles: true,
-        fff: true,
+        muly: true,
+        paz: true,
+        amit: true,
       },
     });
     if (result === null) {
@@ -158,7 +164,9 @@ export class UserControllerBase {
           username: true,
           email: true,
           roles: true,
-          fff: true,
+          muly: true,
+          paz: true,
+          amit: true,
         },
       });
     } catch (error) {
@@ -197,7 +205,9 @@ export class UserControllerBase {
           username: true,
           email: true,
           roles: true,
-          fff: true,
+          muly: true,
+          paz: true,
+          amit: true,
         },
       });
     } catch (error) {

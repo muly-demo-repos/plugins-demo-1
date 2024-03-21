@@ -26,6 +26,9 @@ const CREATE_INPUT = {
   username: "exampleUsername",
   email: "exampleEmail",
   password: "examplePassword",
+  muly: "exampleMuly",
+  paz: "examplePaz",
+  amit: "exampleAmit",
 };
 const CREATE_RESULT = {
   id: "exampleId",
@@ -36,6 +39,9 @@ const CREATE_RESULT = {
   username: "exampleUsername",
   email: "exampleEmail",
   password: "examplePassword",
+  muly: "exampleMuly",
+  paz: "examplePaz",
+  amit: "exampleAmit",
 };
 const FIND_MANY_RESULT = [
   {
@@ -47,6 +53,9 @@ const FIND_MANY_RESULT = [
     username: "exampleUsername",
     email: "exampleEmail",
     password: "examplePassword",
+    muly: "exampleMuly",
+    paz: "examplePaz",
+    amit: "exampleAmit",
   },
 ];
 const FIND_ONE_RESULT = {
@@ -58,6 +67,9 @@ const FIND_ONE_RESULT = {
   username: "exampleUsername",
   email: "exampleEmail",
   password: "examplePassword",
+  muly: "exampleMuly",
+  paz: "examplePaz",
+  amit: "exampleAmit",
 };
 
 const service = {
